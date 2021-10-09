@@ -1,0 +1,6 @@
+<div class="sideBar" *ngIf="router.url!=='/login'">
+  <div [routerLink]="'/login'">LogIn</div>
+  <div [routerLink]="'/news'">News</div>
+  <div [routerLink]="'/profile'">Profile</div>
+</div>
+<router-outlet></router-outlet>
