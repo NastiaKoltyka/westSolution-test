@@ -1,4 +1,4 @@
-export class New {
+export class News {
     title: string;
     content: string;
     url: string;

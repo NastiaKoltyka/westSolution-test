@@ -1,6 +1,6 @@
 <ul class="nav justify-content-center" *ngIf="router.url!=='/login'">
   <li class="nav-item">
-    <div class="nav-link active"[routerLink]="'/home'">Home</div>
+    <div class="nav-link active"[routerLink]="'/'">Home</div>
   </li>
   <li class="nav-item">
     <div class="nav-link"[routerLink]="'/news'">News</div>
@@ -9,7 +9,7 @@
     <div class="nav-link" [routerLink]="'/profile'">Profile</div>
   </li>
   <li class="nav-item">
-    <div class="nav-link" [routerLink]="'/login'">LogOut</div>
+    <div class="nav-link" [routerLink]="'/login'" (click)="logOut()">LogOut</div>
   </li>
 </ul>
 <router-outlet></router-outlet>
