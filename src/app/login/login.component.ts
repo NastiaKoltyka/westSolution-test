@@ -14,6 +14,7 @@ invalid:boolean;
   }
   onSubmit(form: NgForm) {
     if(form.value.username=='admin' && form.value.password=='12345'){
+      localStorage.setItem("authorization", "true");
       this.router.navigate(['/profile']);
     }
     else{
